@@ -58,6 +58,15 @@ export default {
       displayedComponent: 'Home',
       team: [
         {
+          name: 'Brian Jungk',
+          email: 'mailto:brian.jungk@outlook.com',
+          picture: '/assets/smiley-face-1.jpg',
+          about: 'Brian loves working on Vno',
+          github: 'https://github.com/HeroesOfOnesAndZeros',
+          linkedIn: 'https://www.linkedin.com/in/brian-jungk/',
+        }
+        ,
+        {
           name: 'Mikey Gower',
           email: 'mailto:gowermikey@gmail.com',
           picture: '/assets/Mikey.jpg',
