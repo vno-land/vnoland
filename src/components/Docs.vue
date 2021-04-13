@@ -16,10 +16,10 @@
     <div class="moreinfo">
       <div class="lowgos">
         <a href="https://github.com/oslabs-beta/vno" class="linkies"
-          ><img id="gitLogo" class="logo" src="/assets/git-logo.png"
+          ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
         /></a>
         <a href="https://deno.land/x/vno" class="linkies"
-          ><img id="denoLogo" class="logo" src="/assets/deno-logo.png"
+          ><img id="denoLogo" class="logo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
         /></a>
       </div>
     </div>

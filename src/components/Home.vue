@@ -1,16 +1,16 @@
 <template>
   <div class="home">
     <a href="https://github.com/oslabs-beta/vno">
-      <img id="vnoLogo" src="/assets/vnoLogo.png" />
+      <img id="vnoLogo" src="https://i.ibb.co/kDnqSNP/vnoLogo.png" />
     </a>
     <h1>A Vue / Deno Adapter</h1>
     <br />
     <div class="logos">
       <a href="https://github.com/oslabs-beta/vno" target="_blank">
-        <img id="gitLogo" src="/assets/git-logo.png"
+        <img id="gitLogo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
       /></a>
       <a href="https://deno.land/x/vno@v1.0-beta.5" target="_blank">
-        <img id="denoLogo" src="/assets/deno-logo.png"
+        <img id="denoLogo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
       /></a>
     </div>
   </div>

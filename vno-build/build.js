@@ -31,16 +31,16 @@ const Home = Vue.component("Home", {
   template:  /* html */ `
   <div class="home">
     <a href="https://github.com/oslabs-beta/vno">
-      <img id="vnoLogo" src="/assets/vnoLogo.png" />
+      <img id="vnoLogo" src="https://i.ibb.co/kDnqSNP/vnoLogo.png" />
     </a>
     <h1>A Vue / Deno Adapter</h1>
     <br />
     <div class="logos">
       <a href="https://github.com/oslabs-beta/vno" target="_blank">
-        <img id="gitLogo" src="/assets/git-logo.png"
+        <img id="gitLogo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
       /></a>
       <a href="https://deno.land/x/vno@v1.0-beta.5" target="_blank">
-        <img id="denoLogo" src="/assets/deno-logo.png"
+        <img id="denoLogo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
       /></a>
     </div>
   </div>
@@ -102,10 +102,10 @@ const Docs = Vue.component("docs", {
     <div class="moreinfo">
       <div class="lowgos">
         <a href="https://github.com/oslabs-beta/vno" class="linkies"
-          ><img id="gitLogo" class="logo" src="/assets/git-logo.png"
+          ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
         /></a>
         <a href="https://deno.land/x/vno" class="linkies"
-          ><img id="denoLogo" class="logo" src="/assets/deno-logo.png"
+          ><img id="denoLogo" class="logo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
         /></a>
       </div>
     </div>
@@ -203,10 +203,10 @@ const App = new Vue({
       <div class="teamBottom">
         <div class="teamLowgos">
           <a href="https://github.com/oslabs-beta/vno" class="linkies"
-            ><img id="gitLogo" class="logo" src="/assets/git-logo.png"
+            ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
           /></a>
           <a href="https://deno.land/x/vno" class="linkies"
-            ><img id="denoLogo" class="logo" src="/assets/deno-logo.png"
+            ><img id="denoLogo" class="logo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
           /></a>
         </div>
       </div>
@@ -229,7 +229,7 @@ const App = new Vue({
         {
           name: 'Mikey Gower',
           email: 'mailto:gowermikey@gmail.com',
-          picture: '/assets/Mikey.jpg',
+          picture: 'https://i.ibb.co/W6z7VzK/Mikey.jpg',
           about: 'Mikey loves wine. He also loves to party with said wine.',
           github: 'https://github.com/mggower',
           linkedIn: 'https://www.linkedin.com/in/mikeygower/',
@@ -237,7 +237,7 @@ const App = new Vue({
         {
           name: 'Jordan Grubb',
           email: 'mailto:ImJordanGrubb@gmail.com',
-          picture: '/assets/Jordan.jpg',
+          picture: 'https://i.ibb.co/ZfX1pZP/Jordan.jpg',
           about: 'Her drag name is Miss Diagnosed. She loves whiskey.',
           github: 'https://github.com/jgrubb16',
           linkedIn: 'https://www.linkedin.com/in/j-grubb',
@@ -245,7 +245,7 @@ const App = new Vue({
         {
           name: 'Kyle Jurassic',
           email: 'mailto:kjuresich@gmail.com',
-          picture: '/assets/Kyle.jpg',
+          picture: 'https://i.ibb.co/yWBSVcD/Kyle.jpg',
           about: 'He made our ReadMe, and he can read you for filth.',
           github: 'http://github.com/kjurassic',
           linkedIn: 'http://linkedin.com/in/kyle-juresich/',
@@ -253,7 +253,7 @@ const App = new Vue({
         {
           name: 'Andrew Rehrig',
           email: 'mailto:arehrig@gmail.com',
-          picture: '/assets/Andrew.jpg',
+          picture: 'https://i.ibb.co/m6NRmm8/Andrew.jpg',
           about:
             "She's beauty. She's grace. She loves a coding test. She can win any sewing challenge.",
           github: 'https://github.com/andrew-rehrig',
