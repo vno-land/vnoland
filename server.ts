@@ -1,43 +1,39 @@
-import { Application, join, send } from "./deps.ts";
+import { opine, serveStatic } from "https://deno.land/x/opine@1.2.0/mod.ts";
+import  vueServerRenderer from 'https://deno.land/x/vue_server_renderer@/mod.js';
 
-const port: any = Deno.env.get("PORT") || 3000;
-const hostname = "0.0.0.0";
+import App from './vno-ssr/build.js';
+import { join, dirname} from "https://deno.land/std@0.63.0/path/mod.ts";
+import  styles  from './vno-ssr/style.js'
 
-const server: Application = new Application();
+const port = 3000
+const app = opine();
+app.use(serveStatic('vno-build'));
+const __dirname = dirname(import.meta.url);
 
-server.use(async (ctx, next) => {
-  const filePath = ctx.request.url.pathname;
-  if (filePath.slice(0, 7) === "/assets") {
-    await send(ctx, filePath, {
-      root: join(Deno.cwd(), "src"),
-    });
-  } else if (filePath === "/") {
-    await send(ctx, filePath, {
-      root: join(Deno.cwd(), "public"),
-      index: "index.html",
-    });
-  } else if (filePath === "/build.js") {
-    ctx.response.type = "application/javascript";
-    await send(ctx, filePath, {
-      root: join(Deno.cwd(), "vno-build"),
-      index: "build.js",
-    });
-  } else if (filePath === "/style.css") {
-    ctx.response.type = "text/css";
-    await send(ctx, filePath, {
-      root: join(Deno.cwd(), "vno-build"),
-      index: "style.css",
-    });
-  } else await next();
-});
+app.use("/", (req, res, next) => {
 
-server.addEventListener("error", (err) => console.warn(err));
-server.addEventListener("listen", () => {
-  console.log(`server is listening on ${hostname}:${port}`);
-});
+      let rendered;
+      vueServerRenderer(App, (err:any, res:any) => {
+        rendered = res;
+      });
 
-if (import.meta.main) {
-  await server.listen({ port, hostname });
-}
+      const html =
+      `<html>
+         <head>
 
-export { server };
+            ${styles}
+
+         </head>
+         <body>
+           <div id="root">${rendered}</div>
+           <script type="module" src="./build.js"></script>
+         </body>
+       </html>`;
+
+    res.type("text/html").send(html);
+  });
+
+app.listen({ port });
+
+console.log(`Vue SSR App listening on port ${port}`);
+

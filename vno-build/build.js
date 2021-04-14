@@ -1,10 +1,12 @@
 /* eslint-disable */
 /* eslint-disable prettier/prettier */
 // deno-lint-ignore-file
-import * as Vue from "https://cdn.jsdelivr.net/npm/vue@3.0.5/dist/vue.esm-browser.js";
+import Vue from "https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.esm.browser.js";
 
-const DocItem = {
-  template: /* html */ `
+
+     
+const DocItem = Vue.component("doc-item", {
+  template:  /* html */ `
   <div :id="element">
     <li class="docItemContainer">
       <code v-if="code" class="codeblock"> {{ code }}</code>
@@ -17,30 +19,30 @@ const DocItem = {
 `,
   name: 'doc-item',
   props: ['element', 'bullet', 'code', 'gif'],
-};
+});
 
-const DocNav = {
-  template: /* html */ `
+const DocNav = Vue.component("doc-nav", {
+  template:  /* html */ `
   <a :href="link" class="docnav-element">{{ element }}</a>
 `,
   name: 'doc-nav',
   props: ['element', 'methods', 'link'],
-};
+});
 
-const Home = {
-  template: /* html */ `
+const Home = Vue.component("Home", {
+  template:  /* html */ `
   <div class="home">
     <a href="https://github.com/oslabs-beta/vno">
-      <img id="vnoLogo" src="/assets/vnoLogo.png" />
+      <img id="vnoLogo" src="https://i.ibb.co/kDnqSNP/vnoLogo.png" />
     </a>
     <h1>A Vue / Deno Adapter</h1>
     <br />
     <div class="logos">
       <a href="https://github.com/oslabs-beta/vno" target="_blank">
-        <img id="gitLogo" src="/assets/git-logo.png"
+        <img id="gitLogo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
       /></a>
       <a href="https://deno.land/x/vno@v1.0-beta.5" target="_blank">
-        <img id="denoLogo" src="/assets/deno-logo.png"
+        <img id="denoLogo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
       /></a>
     </div>
   </div>
@@ -50,10 +52,10 @@ const Home = {
   props: {
     msg: String,
   },
-};
+});
 
-const Team = {
-  template: /* html */ `
+const Team = Vue.component("Team", {
+  template:  /* html */ `
   <div class="flip-box">
     <div class="flip-box-inner">
       <div class="flip-box-front">
@@ -67,12 +69,14 @@ const Team = {
         <div class="bio">
           <a class="email" :href="email"
             ><i class="fas fa-envelope fa-3x"></i
-          ></a>
+          ><img id="gitLogo" class="logo" src="https://i.ibb.co/Xb39TgW/envelope-solid.png"></a>
           <a :href="github" target="_blank">
             <i class="fab fa-github fa-3x"></i
-          ></a>
+          ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png">
+          </a>
           <a :href="linkedIn" target="_blank">
             <i class="fab fa-linkedin-in fa-3x"></i>
+            <img id="gitLogo" class="logo" src="https://i.ibb.co/sWTysny/linkedin-in-brands.png">
           </a>
         </div>
       </div>
@@ -81,10 +85,10 @@ const Team = {
 `,
   props: ['name', 'email', 'github', 'linkedIn', 'about', 'picture'],
   name: 'Team',
-};
+});
 
-const Docs = {
-  template: /* html */ `
+const Docs = Vue.component("docs", {
+  template:  /* html */ `
   <div id="docs">
     <nav id="doc-nav">
       <DocNav methods: methods v-for="item in information" :key="'key' +
@@ -102,10 +106,10 @@ const Docs = {
     <div class="moreinfo">
       <div class="lowgos">
         <a href="https://github.com/oslabs-beta/vno" class="linkies"
-          ><img id="gitLogo" class="logo" src="/assets/git-logo.png"
+          ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
         /></a>
         <a href="https://deno.land/x/vno" class="linkies"
-          ><img id="denoLogo" class="logo" src="/assets/deno-logo.png"
+          ><img id="denoLogo" class="logo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
         /></a>
       </div>
     </div>
@@ -170,10 +174,10 @@ const Docs = {
       ],
     };
   },
-};
+});
 
-const App = {
-  template: /* html */ `
+const App = new Vue({
+  template:  /* html */ `
   <div id="app">
     <header>
       <ul class="nav">
@@ -203,10 +207,10 @@ const App = {
       <div class="teamBottom">
         <div class="teamLowgos">
           <a href="https://github.com/oslabs-beta/vno" class="linkies"
-            ><img id="gitLogo" class="logo" src="/assets/git-logo.png"
+            ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
           /></a>
           <a href="https://deno.land/x/vno" class="linkies"
-            ><img id="denoLogo" class="logo" src="/assets/deno-logo.png"
+            ><img id="denoLogo" class="logo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
           /></a>
         </div>
       </div>
@@ -225,10 +229,11 @@ const App = {
     return {
       displayedComponent: 'Home',
       team: [
+        
         {
           name: 'Mikey Gower',
           email: 'mailto:gowermikey@gmail.com',
-          picture: '/assets/Mikey.jpg',
+          picture: 'https://i.ibb.co/W6z7VzK/Mikey.jpg',
           about: 'Mikey loves wine. He also loves to party with said wine.',
           github: 'https://github.com/mggower',
           linkedIn: 'https://www.linkedin.com/in/mikeygower/',
@@ -236,7 +241,7 @@ const App = {
         {
           name: 'Jordan Grubb',
           email: 'mailto:ImJordanGrubb@gmail.com',
-          picture: '/assets/Jordan.jpg',
+          picture: 'https://i.ibb.co/ZfX1pZP/Jordan.jpg',
           about: 'Her drag name is Miss Diagnosed. She loves whiskey.',
           github: 'https://github.com/jgrubb16',
           linkedIn: 'https://www.linkedin.com/in/j-grubb',
@@ -244,7 +249,7 @@ const App = {
         {
           name: 'Kyle Jurassic',
           email: 'mailto:kjuresich@gmail.com',
-          picture: '/assets/Kyle.jpg',
+          picture: 'https://i.ibb.co/yWBSVcD/Kyle.jpg',
           about: 'He made our ReadMe, and he can read you for filth.',
           github: 'http://github.com/kjurassic',
           linkedIn: 'http://linkedin.com/in/kyle-juresich/',
@@ -252,12 +257,44 @@ const App = {
         {
           name: 'Andrew Rehrig',
           email: 'mailto:arehrig@gmail.com',
-          picture: '/assets/Andrew.jpg',
+          picture: 'https://i.ibb.co/m6NRmm8/Andrew.jpg',
           about:
             "She's beauty. She's grace. She loves a coding test. She can win any sewing challenge.",
           github: 'https://github.com/andrew-rehrig',
           linkedIn: 'https://www.linkedin.com/in/andrew-rehrig/',
         },
+        {
+          name: 'Dwayne Richards',
+          email: 'mailto:dwaynerichards@gmail.com',
+          picture: 'https://i.ibb.co/2KXmCTw/Screenshot-from-2021-04-14-13-27-11.png',
+          about: 'Dwayne loves working on Vno',
+          github: 'https://github.com/dwaynerichards',
+          linkedIn: 'https://www.linkedin.com/in/dnkrichards/',
+        },
+        {
+          name: 'Brian Jungk',
+          email: 'mailto:brian.jungk@outlook.com',
+          picture: 'https://i.ibb.co/2SMYB6w/Screenshot-from-2021-04-14-13-26-18.png',
+          about: 'Brian also loves working on Vno',
+          github: 'https://github.com/HeroesOfOnesAndZeros',
+          linkedIn: 'https://www.linkedin.com/in/brian-jungk/',
+        },
+        {
+          name: 'Weilan Cui',
+          email: 'mailto:weilanc@gmail.com',
+          picture: 'https://i.ibb.co/F5CX7NW/image.png',
+          about: 'Weilan also loves working on Vno',
+          github: 'https://github.com/deadxears',
+          linkedIn: 'https://www.linkedin.com/in/weilan-cui-81aa93b5/',
+        },
+        {
+          name: 'Robert Yang',
+          email: 'mailto:rob.yang@gmail.com',
+          picture: 'https://i.ibb.co/zSZHVkq/profile.jpg',
+          about: 'Robert also loves working on Vno',
+          github: 'https://github.com/unknownbreaker',
+          linkedIn: 'https://www.linkedin.com/in/robwyang/',
+        }
       ],
     };
   },
@@ -272,13 +309,6 @@ const App = {
     Team,
     Docs,
   },
-};
+});
 
-const vno505690 = Vue.createApp(App)
-vno505690.component("docs", Docs)
-vno505690.component("doc-nav", DocNav)
-vno505690.component("doc-item", DocItem)
-vno505690.component("Team", Team)
-vno505690.component("Home", Home)
-
-vno505690.mount("#app")
+App.$mount("#app")

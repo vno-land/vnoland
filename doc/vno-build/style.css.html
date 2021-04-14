@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>style.css</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../doc-style.css" />
+  <script src="../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../";
+    var thisFile = "vno-build/style.css";
+    var defaultSidebar = true;
+  </script>
+  <script src="../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>style.css</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="css">
+<span class="hljs-selector-class">.docItemContainer</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: column;
+  <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">10%</span> <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-class">.codeblock</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#1a1a1a</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">250</span>, <span class="hljs-number">231</span>, <span class="hljs-number">231</span>);
+  <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">25px</span>;
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">text-align</span>: left;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">1.75%</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">25px</span>;
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">55px</span>;
+  <span class="hljs-attribute">min-height</span>: fit-content;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">25vw</span>;
+  <span class="hljs-attribute">min-width</span>: <span class="hljs-number">300px</span>;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">500px</span>;
+  <span class="hljs-attribute">animation</span>: glowing <span class="hljs-number">3000ms</span> infinite;
+}
+<span class="hljs-keyword">@keyframes</span> glowing {
+  0% {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#1a1a1a</span>;
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-number">#79d0b2</span>;
+  }
+  50% {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#1a1a1a</span>;
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-number">#79d0b2</span>;
+  }
+  100% {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#1a1a1a</span>;
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-number">#79d0b2</span>;
+  }
+}
+
+<span class="hljs-selector-class">.gif</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">98%</span>;
+  <span class="hljs-attribute">max-width</span>: fit-content;
+}
+<span class="hljs-selector-class">.desc</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">40vw</span>;
+  <span class="hljs-attribute">min-height</span>: fit-content;
+  <span class="hljs-attribute">min-width</span>: <span class="hljs-number">250px</span>;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">500px</span>;
+  <span class="hljs-attribute">text-align</span>: justify;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">25px</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.3</span>;
+}
+<span class="hljs-selector-class">.desc</span> <span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">1.1</span>;
+}
+
+<span class="hljs-selector-class">.docnav-element</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">5px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">8px</span>;
+}
+<span class="hljs-selector-class">.docnav-element</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#57d3af</span>;
+}
+
+<span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:link</span> {
+  <span class="hljs-attribute">text-decoration</span>: none;
+}
+<span class="hljs-selector-class">.logos</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span>;
+}
+<span class="hljs-selector-class">.home</span> <span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">16px</span>;
+}
+<span class="hljs-selector-id">#gitLogo</span> {
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">0.4rem</span>;
+}
+<span class="hljs-selector-id">#denoLogo</span> {
+  <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0.4rem</span>;
+}
+<span class="hljs-selector-id">#vnoLogo</span> {
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">4.5rem</span>;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">50%</span>;
+}
+<span class="hljs-selector-id">#logoText</span> {
+  <span class="hljs-attribute">justify-content</span>: center;
+}
+<span class="hljs-selector-id">#gitText</span> {
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">1.8rem</span>;
+  <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0.5rem</span>;
+}
+<span class="hljs-selector-id">#gitText</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#57d3af</span>;
+}
+<span class="hljs-selector-id">#denoText</span> {
+  <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0rem</span>;
+}
+<span class="hljs-selector-class">.docTags</span> {
+  <span class="hljs-attribute">color</span>: white;
+}
+<span class="hljs-selector-class">.docTags</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#57d3af</span>;
+}
+
+<span class="hljs-keyword">@import</span> url(<span class="hljs-string">'https://fonts.googleapis.com/css2?family=Montserrat:wght@200&amp;display=swap'</span>);
+
+<span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+}
+
+<span class="hljs-selector-class">.bio</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">20%</span>;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-flow</span>: row nowrap;
+  <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">justify-content</span>: center;
+}
+<span class="hljs-selector-class">.bio</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">8px</span>;
+}
+
+<span class="hljs-selector-class">.flip-box</span> {
+  <span class="hljs-attribute">background-color</span>: transparent;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
+  <span class="hljs-attribute">perspective</span>: <span class="hljs-number">1000px</span>;
+}
+
+<span class="hljs-selector-class">.flip-box-inner</span> {
+  <span class="hljs-attribute">position</span>: relative;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">transition</span>: transform <span class="hljs-number">0.8s</span>;
+  <span class="hljs-attribute">transform-style</span>: preserve-<span class="hljs-number">3</span>d;
+}
+<span class="hljs-selector-class">.flip-box</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.flip-box-inner</span> {
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotateY</span>(<span class="hljs-number">180deg</span>);
+}
+<span class="hljs-selector-class">.flip-box-front</span>,
+<span class="hljs-selector-class">.flip-box-back</span> {
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">-webkit-backface-visibility</span>: hidden; 
+  <span class="hljs-attribute">backface-visibility</span>: hidden;
+}
+<span class="hljs-selector-class">.flip-box-front</span> <span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+}
+<span class="hljs-selector-class">.flip-box-back</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-flow</span>: column;
+  <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">box-shadow</span>: -<span class="hljs-number">5px</span> <span class="hljs-number">5px</span> <span class="hljs-number">20px</span> <span class="hljs-number">3px</span> <span class="hljs-number">#57d3b082</span>;
+  <span class="hljs-attribute">color</span>: white;
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotateY</span>(<span class="hljs-number">180deg</span>);
+}
+
+<span class="hljs-selector-class">.flip-box-front</span> {
+  <span class="hljs-attribute">background-color</span>: transparent;
+  <span class="hljs-attribute">animation</span>: mymove <span class="hljs-number">5s</span> infinite;
+}
+
+<span class="hljs-keyword">@keyframes</span> mymove {
+  0% {
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-number">15px</span> <span class="hljs-number">0px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.6</span>);
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translatey</span>(<span class="hljs-number">0px</span>);
+  }
+  50% {
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">25px</span> <span class="hljs-number">15px</span> <span class="hljs-number">0px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.2</span>);
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translatey</span>(<span class="hljs-number">20px</span>);
+  }
+  100% {
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-number">15px</span> <span class="hljs-number">0px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.6</span>);
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translatey</span>(<span class="hljs-number">0px</span>);
+  }
+}
+<span class="hljs-selector-id">#meetTeam</span> {
+  <span class="hljs-attribute">display</span>: inline-block;
+  <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">6rem</span>;
+}
+
+<span class="hljs-selector-tag">h2</span> {
+  <span class="hljs-attribute">font-family</span>: Chalet-NewYorkNineteenSixty, <span class="hljs-string">'Montserrat'</span>, sans-serif;
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">24px</span>;
+}
+
+<span class="hljs-selector-class">.docs</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">25px</span>;
+}
+
+<span class="hljs-selector-tag">h1</span><span class="hljs-selector-class">.pad</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">8vh</span>;
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">2px</span>;
+}
+<span class="hljs-selector-id">#doc-nav</span> {
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">40px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">6vw</span>;
+  <span class="hljs-attribute">position</span>: sticky;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#15131342</span>;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-wrap</span>: wrap;
+  <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">justify-content</span>: space-between;
+}
+<span class="hljs-selector-class">.moreinfo</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: column;
+  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#15131342</span>;
+  <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0</span> <span class="hljs-number">6px</span>;
+}
+
+<span class="hljs-selector-class">.linkies</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#57d3af</span>;
+}
+
+<span class="hljs-selector-id">#denoLogo</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">3.1rem</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">3rem</span>;
+}
+<span class="hljs-selector-id">#gitLogo</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">3rem</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">3rem</span>;
+}
+
+<span class="hljs-keyword">@import</span> url(<span class="hljs-string">'https://db.onlinewebfonts.com/c/6d253426005e3fdcd9f69455050bd7d7?family=Chalet-NewYorkNineteenSixty'</span>);
+<span class="hljs-selector-tag">html</span> {
+  <span class="hljs-attribute">scroll-behavior</span>: smooth;
+}
+<span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#203a42</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100vw</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
+}
+
+<span class="hljs-selector-class">.teamWrapper</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-flow</span>: row wrap;
+  <span class="hljs-attribute">justify-content</span>: space-evenly;
+  <span class="hljs-attribute">align-items</span>: center;
+}
+
+<span class="hljs-selector-id">#meetTeam</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">9vw</span>;
+}
+
+<span class="hljs-selector-class">.nav</span> {
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">10px</span> <span class="hljs-number">0px</span> <span class="hljs-number">#132429</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">6vw</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#1a3037</span>;
+  <span class="hljs-attribute">list-style-type</span>: none;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">color</span>: white;
+  <span class="hljs-attribute">justify-content</span>: space-between;
+}
+<span class="hljs-selector-class">.nav</span> <span class="hljs-selector-tag">li</span> {
+  <span class="hljs-attribute">color</span>: white;
+  <span class="hljs-attribute">cursor</span>: pointer;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span>;
+}
+<span class="hljs-selector-class">.nav</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2rem</span>;
+  <span class="hljs-attribute">font-weight</span>: bold;
+  <span class="hljs-attribute">font-family</span>: Chalet-NewYorkNineteenSixty, Avenir, Helvetica, Arial, sans-serif;
+}
+<span class="hljs-selector-class">.nav</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:active</span> {
+  <span class="hljs-attribute">text-decoration</span>: none;
+}
+<span class="hljs-selector-class">.nav</span> <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#57d3af</span>;
+  <span class="hljs-attribute">text-decoration</span>: none;
+}
+<span class="hljs-selector-id">#app</span> {
+  <span class="hljs-attribute">height</span>: fit-content;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: column;
+  <span class="hljs-attribute">font-family</span>: Chalet-NewYorkNineteenSixty, Avenir, Helvetica, Arial, sans-serif;
+  <span class="hljs-attribute">-webkit-font-smoothing</span>: antialiased;
+  <span class="hljs-attribute">-moz-osx-font-smoothing</span>: grayscale;
+  <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#79d0b2</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-selector-id">#denoLogo</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">3.1rem</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">3rem</span>;
+}
+<span class="hljs-selector-id">#gitLogo</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">3rem</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">3rem</span>;
+}
+<span class="hljs-selector-id">#built</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">font-style</span>: italic;
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">position</span>: fixed;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">15px</span>;
+  <span class="hljs-attribute">bottom</span>: <span class="hljs-number">15px</span>;
+  <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">5</span>;
+}
+
+<span class="hljs-selector-class">.teamLowgos</span> {
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">position</span>: fixed;
+  <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">3</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: row;
+  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">background</span>: <span class="hljs-number">#15131342</span>;
+  <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0</span> <span class="hljs-number">6px</span>;
+}
+
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

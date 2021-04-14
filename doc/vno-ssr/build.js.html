@@ -1,19 +1,84 @@
-/* eslint-disable */
-/* eslint-disable prettier/prettier */
-// deno-lint-ignore-file
-import Vue from "https://deno.land/x/vue_js@/mod.js";
+<!DOCTYPE html>
+<html>
+<head>
+  <title>build.js</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../doc-style.css" />
+  <script src="../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../";
+    var thisFile = "vno-ssr/build.js";
+    var defaultSidebar = true;
+  </script>
+  <script src="../doc-script.js"></script>
 
-const DocItem = Vue.component("doc-item", {
-  template:  /* html */ `
-  <div :id="element">
-    <li class="docItemContainer">
-      <code v-if="code" class="codeblock"> {{ code }}</code>
-      <div class="desc">
-        <p>{{ bullet }}</p>
-      </div>
-      <img v-if="gif" class="gif" :src="gif" :alt="element" />
-    </li>
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
   </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>build.js</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript"><span class="hljs-comment">/* eslint-disable */</span>
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-2" id="section-2"></a>
+</div>
+<div class="dox">
+<div class="summary">
+<p>eslint-disable prettier/prettier<br>
+// deno-lint-ignore-file
+import Vue from &quot;https://deno.land/x/vue_js@/mod.js&quot;;</p>
+</div>
+<div class="body">
+<p>const DocItem = Vue.component(&quot;doc-item&quot;, {
+template:  /* html */ `</p>
+</div>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">  &lt;div :id="element"&gt;
+    &lt;li class="docItemContainer"&gt;
+      &lt;code v-if="code" class="codeblock"&gt; {{ code }}&lt;/code&gt;
+      &lt;div class="desc"&gt;
+        &lt;p&gt;{{ bullet }}&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;img v-if="gif" class="gif" :src="gif" :alt="element" /&gt;
+    &lt;/li&gt;
+  &lt;/div&gt;
 `,
   name: 'doc-item',
   props: ['element', 'bullet', 'code', 'gif'],
@@ -21,7 +86,7 @@ const DocItem = Vue.component("doc-item", {
 
 const DocNav = Vue.component("doc-nav", {
   template:  /* html */ `
-  <a :href="link" class="docnav-element">{{ element }}</a>
+  &lt;a :href="link" class="docnav-element"&gt;{{ element }}&lt;/a&gt;
 `,
   name: 'doc-nav',
   props: ['element', 'methods', 'link'],
@@ -29,21 +94,21 @@ const DocNav = Vue.component("doc-nav", {
 
 const Home = Vue.component("Home", {
   template:  /* html */ `
-  <div class="home">
-    <a href="https://github.com/oslabs-beta/vno">
-      <img id="vnoLogo" src="https://i.ibb.co/kDnqSNP/vnoLogo.png" />
-    </a>
-    <h1>A Vue / Deno Adapter</h1>
-    <br />
-    <div class="logos">
-      <a href="https://github.com/oslabs-beta/vno" target="_blank">
-        <img id="gitLogo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
-      /></a>
-      <a href="https://deno.land/x/vno@v1.0-beta.5" target="_blank">
-        <img id="denoLogo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
-      /></a>
-    </div>
-  </div>
+  &lt;div class="home"&gt;
+    &lt;a href="https://github.com/oslabs-beta/vno"&gt;
+      &lt;img id="vnoLogo" src="https://i.ibb.co/kDnqSNP/vnoLogo.png" /&gt;
+    &lt;/a&gt;
+    &lt;h1&gt;A Vue / Deno Adapter&lt;/h1&gt;
+    &lt;br /&gt;
+    &lt;div class="logos"&gt;
+      &lt;a href="https://github.com/oslabs-beta/vno" target="_blank"&gt;
+        &lt;img id="gitLogo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
+      /&gt;&lt;/a&gt;
+      &lt;a href="https://deno.land/x/vno@v1.0-beta.5" target="_blank"&gt;
+        &lt;img id="denoLogo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
+      /&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 `,
   name: 'Home',
 
@@ -54,32 +119,30 @@ const Home = Vue.component("Home", {
 
 const Team = Vue.component("Team", {
   template:  /* html */ `
-  <div class="flip-box">
-    <div class="flip-box-inner">
-      <div class="flip-box-front">
-        <img :src="picture" alt="image" border="0" width="250" height="250" />
-      </div>
+  &lt;div class="flip-box"&gt;
+    &lt;div class="flip-box-inner"&gt;
+      &lt;div class="flip-box-front"&gt;
+        &lt;img :src="picture" alt="image" border="0" width="250" height="250" /&gt;
+      &lt;/div&gt;
       
-      <div class="flip-box-back">
-        <div class="bio">
-          <h2>{{ name }}</h2>
-        </div>
-        <div class="bio">
-          <a class="email" :href="email"
-            ><i class="fas fa-envelope fa-3x"></i
-          ><img id="gitLogo" class="logo" src="https://i.ibb.co/Xb39TgW/envelope-solid.png"></a>
-          <a :href="github" target="_blank">
-            <i class="fab fa-github fa-3x"></i
-          ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png">
-          </a>
-          <a :href="linkedIn" target="_blank">
-            <i class="fab fa-linkedin-in fa-3x"></i>
-            <img id="gitLogo" class="logo" src="https://i.ibb.co/sWTysny/linkedin-in-brands.png">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+      &lt;div class="flip-box-back"&gt;
+        &lt;div class="bio"&gt;
+          &lt;h2&gt;{{ name }}&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div class="bio"&gt;
+          &lt;a class="email" :href="email"
+            &gt;&lt;i class="fas fa-envelope fa-3x"&gt;&lt;/i
+          &gt;&lt;/a&gt;
+          &lt;a :href="github" target="_blank"&gt;
+            &lt;i class="fab fa-github fa-3x"&gt;&lt;/i
+          &gt;&lt;/a&gt;
+          &lt;a :href="linkedIn" target="_blank"&gt;
+            &lt;i class="fab fa-linkedin-in fa-3x"&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 `,
   props: ['name', 'email', 'github', 'linkedIn', 'about', 'picture'],
   name: 'Team',
@@ -87,31 +150,31 @@ const Team = Vue.component("Team", {
 
 const Docs = Vue.component("docs", {
   template:  /* html */ `
-  <div id="docs">
-    <nav id="doc-nav">
-      <DocNav methods: methods v-for="item in information" :key="'key' +
-      item.element" :element="item.element" :href="'#' + item.element" />
-    </nav>
-    <h1 class="pad">Getting Started</h1>
-    <DocItem
+  &lt;div id="docs"&gt;
+    &lt;nav id="doc-nav"&gt;
+      &lt;DocNav methods: methods v-for="item in information" :key="'key' +
+      item.element" :element="item.element" :href="'#' + item.element" /&gt;
+    &lt;/nav&gt;
+    &lt;h1 class="pad"&gt;Getting Started&lt;/h1&gt;
+    &lt;DocItem
       v-for="item in information"
       :key="item.element"
       :element="item.element"
       :bullet="item.bullet"
       :code="item.code"
       :gif="item.gif"
-    />
-    <div class="moreinfo">
-      <div class="lowgos">
-        <a href="https://github.com/oslabs-beta/vno" class="linkies"
-          ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
-        /></a>
-        <a href="https://deno.land/x/vno" class="linkies"
-          ><img id="denoLogo" class="logo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
-        /></a>
-      </div>
-    </div>
-  </div>
+    /&gt;
+    &lt;div class="moreinfo"&gt;
+      &lt;div class="lowgos"&gt;
+        &lt;a href="https://github.com/oslabs-beta/vno" class="linkies"
+          &gt;&lt;img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
+        /&gt;&lt;/a&gt;
+        &lt;a href="https://deno.land/x/vno" class="linkies"
+          &gt;&lt;img id="denoLogo" class="logo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
+        /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 `,
   name: 'docs',
   components: { DocItem, DocNav },
@@ -176,22 +239,22 @@ const Docs = Vue.component("docs", {
 
 const App = new Vue({
   template:  /* html */ `
-  <div id="app">
-    <header>
-      <ul class="nav">
-        <a @click="handelClick('Home')"><li>Home</li></a>
-        <a @click="handelClick('Docs')"><li>Docs</li></a>
-        <a @click="handelClick('Team')"><li>Team</li></a>
-      </ul>
-    </header>
+  &lt;div id="app"&gt;
+    &lt;header&gt;
+      &lt;ul class="nav"&gt;
+        &lt;a @click="handelClick('Home')"&gt;&lt;li&gt;Home&lt;/li&gt;&lt;/a&gt;
+        &lt;a @click="handelClick('Docs')"&gt;&lt;li&gt;Docs&lt;/li&gt;&lt;/a&gt;
+        &lt;a @click="handelClick('Team')"&gt;&lt;li&gt;Team&lt;/li&gt;&lt;/a&gt;
+      &lt;/ul&gt;
+    &lt;/header&gt;
 
-    <div v-if="displayedComponent === 'Home'">
-      <Home />
-    </div>
-    <div class="teamTest" v-else-if="displayedComponent === 'Team'">
-      <h1 id="meetTeam">Meet The Team</h1>
-      <div class="teamWrapper">
-        <Team
+    &lt;div v-if="displayedComponent === 'Home'"&gt;
+      &lt;Home /&gt;
+    &lt;/div&gt;
+    &lt;div class="teamTest" v-else-if="displayedComponent === 'Team'"&gt;
+      &lt;h1 id="meetTeam"&gt;Meet The Team&lt;/h1&gt;
+      &lt;div class="teamWrapper"&gt;
+        &lt;Team
           v-for="person in team"
           :key="person.id"
           :name="person.name"
@@ -200,27 +263,27 @@ const App = new Vue({
           :email="person.email"
           :github="person.github"
           :linkedIn="person.linkedIn"
-        />
-      </div>
-      <div class="teamBottom">
-        <div class="teamLowgos">
-          <a href="https://github.com/oslabs-beta/vno" class="linkies"
-            ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
-          /></a>
-          <a href="https://deno.land/x/vno" class="linkies"
-            ><img id="denoLogo" class="logo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
-          /></a>
-        </div>
-      </div>
-    </div>
+        /&gt;
+      &lt;/div&gt;
+      &lt;div class="teamBottom"&gt;
+        &lt;div class="teamLowgos"&gt;
+          &lt;a href="https://github.com/oslabs-beta/vno" class="linkies"
+            &gt;&lt;img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
+          /&gt;&lt;/a&gt;
+          &lt;a href="https://deno.land/x/vno" class="linkies"
+            &gt;&lt;img id="denoLogo" class="logo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
+          /&gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
 
-    <div v-else-if="displayedComponent === 'Docs'">
-      <Docs />
-    </div>
-    <div v-else-if="displayedComponent === 'Demo'">
-      <Demo />
-    </div>
-  </div>
+    &lt;div v-else-if="displayedComponent === 'Docs'"&gt;
+      &lt;Docs /&gt;
+    &lt;/div&gt;
+    &lt;div v-else-if="displayedComponent === 'Demo'"&gt;
+      &lt;Demo /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 `,
   name: 'app',
   data() {
@@ -264,7 +327,7 @@ const App = new Vue({
         {
           name: 'Dwayne Richards',
           email: 'mailto:dwaynerichards@gmail.com',
-          picture: 'https://i.ibb.co/2KXmCTw/Screenshot-from-2021-04-14-13-27-11.png',
+          picture: '/assets/smiley-face-1.jpg',
           about: 'Dwayne loves working on Vno',
           github: 'https://github.com/dwaynerichards',
           linkedIn: 'https://www.linkedin.com/in/dnkrichards/',
@@ -272,7 +335,7 @@ const App = new Vue({
         {
           name: 'Brian Jungk',
           email: 'mailto:brian.jungk@outlook.com',
-          picture: 'https://i.ibb.co/2SMYB6w/Screenshot-from-2021-04-14-13-26-18.png',
+          picture: '/assets/smiley-face-1.jpg',
           about: 'Brian also loves working on Vno',
           github: 'https://github.com/HeroesOfOnesAndZeros',
           linkedIn: 'https://www.linkedin.com/in/brian-jungk/',
@@ -280,7 +343,7 @@ const App = new Vue({
         {
           name: 'Weilan Cui',
           email: 'mailto:weilanc@gmail.com',
-          picture: 'https://i.ibb.co/F5CX7NW/image.png',
+          picture: '/assets/smiley-face-1.jpg',
           about: 'Weilan also loves working on Vno',
           github: 'https://github.com/deadxears',
           linkedIn: 'https://www.linkedin.com/in/weilan-cui-81aa93b5/',
@@ -288,7 +351,7 @@ const App = new Vue({
         {
           name: 'Robert Yang',
           email: 'mailto:rob.yang@gmail.com',
-          picture: 'https://i.ibb.co/zSZHVkq/profile.jpg',
+          picture: '/assets/smiley-face-1.jpg',
           about: 'Robert also loves working on Vno',
           github: 'https://github.com/unknownbreaker',
           linkedIn: 'https://www.linkedin.com/in/robwyang/',
@@ -309,3 +372,13 @@ const App = new Vue({
   },
 });
 export default App
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>
