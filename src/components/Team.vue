@@ -11,15 +11,15 @@
         </div>
         <div class="bio">
           <a class="email" :href="email"
-            ><i class="fas fa-envelope fa-3x"></i
-          ><img id="gitLogo" class="logo" src="https://i.ibb.co/Xb39TgW/envelope-solid.png"></a>
+            ><i class="fas fa-envelope fa-2x"></i
+          ></a>
           <a :href="github" target="_blank">
-            <i class="fab fa-github fa-3x"></i
-          ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png">
+            <i class="fab fa-github fa-2x"></i
+          >
           </a>
           <a :href="linkedIn" target="_blank">
-            <i class="fab fa-linkedin-in fa-3x"></i>
-            <img id="gitLogo" class="logo" src="https://i.ibb.co/sWTysny/linkedin-in-brands.png">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+
           </a>
         </div>
       </div>
@@ -56,8 +56,8 @@ a {
   background-color: transparent;
   margin: 16px;
   padding: 16px;
-  height: 300px;
-  width: 300px;
+  height: 187px;
+  width: 187px;
   perspective: 1000px;
 }
 
@@ -124,6 +124,6 @@ a {
 h2 {
   font-family: Chalet-NewYorkNineteenSixty, 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 </style>

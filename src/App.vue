@@ -110,7 +110,7 @@ export default {
         {
           name: 'Weilan Cui',
           email: 'mailto:weilanc@gmail.com',
-          picture: 'https://i.ibb.co/F5CX7NW/image.png',
+          picture: 'https://i.ibb.co/47b6SZn/image-1.png',
           about: 'Weilan also loves working on Vno',
           github: 'https://github.com/deadxears',
           linkedIn: 'https://www.linkedin.com/in/weilan-cui-81aa93b5/',
@@ -160,7 +160,7 @@ body {
 }
 
 #meetTeam {
-  font-size: 9vw;
+  font-size: 6vw;
 }
 
 .nav {
