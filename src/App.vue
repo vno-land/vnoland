@@ -94,7 +94,7 @@ export default {
         {
           name: 'Dwayne Richards',
           email: 'mailto:dwaynerichards@gmail.com',
-          picture: '/assets/smiley-face-1.jpg',
+          picture: 'https://i.ibb.co/QF2pVTx/dw-beach.jpg',
           about: 'Dwayne loves working on Vno',
           github: 'https://github.com/dwaynerichards',
           linkedIn: 'https://www.linkedin.com/in/dnkrichards/',
@@ -102,7 +102,7 @@ export default {
         {
           name: 'Brian Jungk',
           email: 'mailto:brian.jungk@outlook.com',
-          picture: '/assets/smiley-face-1.jpg',
+          picture: 'https://i.ibb.co/HTpP2Hz/thumbnail-IMG-0852-1.jpg',
           about: 'Brian also loves working on Vno',
           github: 'https://github.com/HeroesOfOnesAndZeros',
           linkedIn: 'https://www.linkedin.com/in/brian-jungk/',
@@ -110,7 +110,7 @@ export default {
         {
           name: 'Weilan Cui',
           email: 'mailto:weilanc@gmail.com',
-          picture: '/assets/smiley-face-1.jpg',
+          picture: 'https://i.ibb.co/F5CX7NW/image.png',
           about: 'Weilan also loves working on Vno',
           github: 'https://github.com/deadxears',
           linkedIn: 'https://www.linkedin.com/in/weilan-cui-81aa93b5/',
@@ -118,7 +118,7 @@ export default {
         {
           name: 'Robert Yang',
           email: 'mailto:rob.yang@gmail.com',
-          picture: '/assets/smiley-face-1.jpg',
+          picture: 'https://i.ibb.co/zSZHVkq/profile.jpg',
           about: 'Robert also loves working on Vno',
           github: 'https://github.com/unknownbreaker',
           linkedIn: 'https://www.linkedin.com/in/robwyang/',
