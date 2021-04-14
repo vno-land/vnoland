@@ -22,7 +22,10 @@ app.use("/", (req, res, next) => {
          <head>
 
             ${styles}
-
+            <script
+            src="https://kit.fontawesome.com/d618e5fd36.js"
+            crossorigin="anonymous"
+          ></script>
          </head>
          <body>
            <div id="root">${rendered}</div>
