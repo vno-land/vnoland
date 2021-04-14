@@ -69,7 +69,7 @@ export default {
         {
           name: 'Jordan Grubb',
           email: 'mailto:ImJordanGrubb@gmail.com',
-          picture: 'https://i.ibb.co/ZfX1pZP/Jordan.jpg',
+          picture: 'https://i.ibb.co/6mw8kZv/2.png',
           about: 'Her drag name is Miss Diagnosed. She loves whiskey.',
           github: 'https://github.com/jgrubb16',
           linkedIn: 'https://www.linkedin.com/in/j-grubb',
