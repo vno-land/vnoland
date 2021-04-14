@@ -69,12 +69,14 @@ const Team = Vue.component("Team", {
         <div class="bio">
           <a class="email" :href="email"
             ><i class="fas fa-envelope fa-3x"></i
-          ></a>
+          ><img id="gitLogo" class="logo" src="https://i.ibb.co/Xb39TgW/envelope-solid.png"></a>
           <a :href="github" target="_blank">
             <i class="fab fa-github fa-3x"></i
-          ></a>
+          ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png">
+          </a>
           <a :href="linkedIn" target="_blank">
             <i class="fab fa-linkedin-in fa-3x"></i>
+            <img id="gitLogo" class="logo" src="https://i.ibb.co/sWTysny/linkedin-in-brands.png">
           </a>
         </div>
       </div>
@@ -264,7 +266,7 @@ const App = new Vue({
         {
           name: 'Dwayne Richards',
           email: 'mailto:dwaynerichards@gmail.com',
-          picture: '/assets/smiley-face-1.jpg',
+          picture: 'https://i.ibb.co/2KXmCTw/Screenshot-from-2021-04-14-13-27-11.png',
           about: 'Dwayne loves working on Vno',
           github: 'https://github.com/dwaynerichards',
           linkedIn: 'https://www.linkedin.com/in/dnkrichards/',
@@ -272,7 +274,7 @@ const App = new Vue({
         {
           name: 'Brian Jungk',
           email: 'mailto:brian.jungk@outlook.com',
-          picture: '/assets/smiley-face-1.jpg',
+          picture: 'https://i.ibb.co/2SMYB6w/Screenshot-from-2021-04-14-13-26-18.png',
           about: 'Brian also loves working on Vno',
           github: 'https://github.com/HeroesOfOnesAndZeros',
           linkedIn: 'https://www.linkedin.com/in/brian-jungk/',
@@ -280,7 +282,7 @@ const App = new Vue({
         {
           name: 'Weilan Cui',
           email: 'mailto:weilanc@gmail.com',
-          picture: '/assets/smiley-face-1.jpg',
+          picture: 'https://i.ibb.co/F5CX7NW/image.png',
           about: 'Weilan also loves working on Vno',
           github: 'https://github.com/deadxears',
           linkedIn: 'https://www.linkedin.com/in/weilan-cui-81aa93b5/',
@@ -288,7 +290,7 @@ const App = new Vue({
         {
           name: 'Robert Yang',
           email: 'mailto:rob.yang@gmail.com',
-          picture: '/assets/smiley-face-1.jpg',
+          picture: 'https://i.ibb.co/zSZHVkq/profile.jpg',
           about: 'Robert also loves working on Vno',
           github: 'https://github.com/unknownbreaker',
           linkedIn: 'https://www.linkedin.com/in/robwyang/',

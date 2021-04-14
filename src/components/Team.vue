@@ -12,12 +12,14 @@
         <div class="bio">
           <a class="email" :href="email"
             ><i class="fas fa-envelope fa-3x"></i
-          ></a>
+          ><img id="gitLogo" class="logo" src="https://i.ibb.co/Xb39TgW/envelope-solid.png"></a>
           <a :href="github" target="_blank">
             <i class="fab fa-github fa-3x"></i
-          ></a>
+          ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png">
+          </a>
           <a :href="linkedIn" target="_blank">
             <i class="fab fa-linkedin-in fa-3x"></i>
+            <img id="gitLogo" class="logo" src="https://i.ibb.co/sWTysny/linkedin-in-brands.png">
           </a>
         </div>
       </div>

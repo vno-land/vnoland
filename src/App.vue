@@ -94,7 +94,7 @@ export default {
         {
           name: 'Dwayne Richards',
           email: 'mailto:dwaynerichards@gmail.com',
-          picture: 'https://i.ibb.co/QF2pVTx/dw-beach.jpg',
+          picture: 'https://i.ibb.co/2KXmCTw/Screenshot-from-2021-04-14-13-27-11.png',
           about: 'Dwayne loves working on Vno',
           github: 'https://github.com/dwaynerichards',
           linkedIn: 'https://www.linkedin.com/in/dnkrichards/',
@@ -102,7 +102,7 @@ export default {
         {
           name: 'Brian Jungk',
           email: 'mailto:brian.jungk@outlook.com',
-          picture: 'https://i.ibb.co/HTpP2Hz/thumbnail-IMG-0852-1.jpg',
+          picture: 'https://i.ibb.co/2SMYB6w/Screenshot-from-2021-04-14-13-26-18.png',
           about: 'Brian also loves working on Vno',
           github: 'https://github.com/HeroesOfOnesAndZeros',
           linkedIn: 'https://www.linkedin.com/in/brian-jungk/',
