@@ -66,15 +66,15 @@ const Team = Vue.component("Team", {
         </div>
         <div class="bio">
           <a class="email" :href="email"
-            ><i class="fas fa-envelope fa-3x"></i
-          ><img id="gitLogo" class="logo" src="https://i.ibb.co/Xb39TgW/envelope-solid.png"></a>
+            ><i class="fas fa-envelope fa-2x"></i
+          ></a>
           <a :href="github" target="_blank">
-            <i class="fab fa-github fa-3x"></i
-          ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png">
+            <i class="fab fa-github fa-2x"></i
+          >
           </a>
           <a :href="linkedIn" target="_blank">
-            <i class="fab fa-linkedin-in fa-3x"></i>
-            <img id="gitLogo" class="logo" src="https://i.ibb.co/sWTysny/linkedin-in-brands.png">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+
           </a>
         </div>
       </div>
@@ -147,12 +147,19 @@ const Docs = Vue.component("docs", {
           gif:
             'https://cdn-images-1.medium.com/max/1600/1*-uhAIJMly9eTevEhgrulqw.gif',
         },
+{
+          element: 'build --ssr',
+          bullet: `To invoke the build method and dynamically create bundled js, css files, and a server.ts for server side rendering your application, type the following into the terminal:`,
+          code: 'vno build --ssr',
+          gif:
+            'https://i.ibb.co/bHC4CHK/Peek-2021-04-14-14-54.gif',
+        },
         {
           element: 'run dev',
-          bullet: `To faciliate development, we have provided access to a dummy server/re-build process that will bypass the need for manual rebuild every time a change has occured during development. You will simply need to call vno run dev to spin up the server with a connection to your root component. If you would like to utilize this functionality but have bypassed the create method, you will need to add an "options": {"port": 3000} to your vno.config.json file.`,
+          bullet: `To faciliate development, we have provided access to live reloading which bypasses the need for manual rebuild every time a change has occured during development. You will simply need to call vno run dev to spin up the server with a connection to your root component. If you would like to utilize this functionality but have bypassed the create method, you will need to add an "options": {"port": 3000} to your vno.config.json file.`,
           code: 'vno run dev',
           gif:
-            'https://cdn-images-1.medium.com/max/1600/1*5vQGLXvmlzJacQpqFEJV-Q.gif',
+            'https://i.ibb.co/6R2R5H5/live-Reload.gif',
         },
         {
           element: 'external dependencies',
@@ -239,7 +246,7 @@ const App = new Vue({
         {
           name: 'Jordan Grubb',
           email: 'mailto:ImJordanGrubb@gmail.com',
-          picture: 'https://i.ibb.co/ZfX1pZP/Jordan.jpg',
+          picture: 'https://i.ibb.co/6mw8kZv/2.png',
           about: 'Her drag name is Miss Diagnosed. She loves whiskey.',
           github: 'https://github.com/jgrubb16',
           linkedIn: 'https://www.linkedin.com/in/j-grubb',
@@ -280,7 +287,7 @@ const App = new Vue({
         {
           name: 'Weilan Cui',
           email: 'mailto:weilanc@gmail.com',
-          picture: 'https://i.ibb.co/F5CX7NW/image.png',
+          picture: 'https://i.ibb.co/0JRx4gH/Screenshot-from-2021-04-14-18-30-50.png',
           about: 'Weilan also loves working on Vno',
           github: 'https://github.com/deadxears',
           linkedIn: 'https://www.linkedin.com/in/weilan-cui-81aa93b5/',

@@ -69,7 +69,7 @@ export default {
         {
           name: 'Jordan Grubb',
           email: 'mailto:ImJordanGrubb@gmail.com',
-          picture: 'https://i.ibb.co/ZfX1pZP/Jordan.jpg',
+          picture: 'https://i.ibb.co/6mw8kZv/2.png',
           about: 'Her drag name is Miss Diagnosed. She loves whiskey.',
           github: 'https://github.com/jgrubb16',
           linkedIn: 'https://www.linkedin.com/in/j-grubb',
@@ -110,7 +110,7 @@ export default {
         {
           name: 'Weilan Cui',
           email: 'mailto:weilanc@gmail.com',
-          picture: 'https://i.ibb.co/F5CX7NW/image.png',
+          picture: 'https://i.ibb.co/0JRx4gH/Screenshot-from-2021-04-14-18-30-50.png',
           about: 'Weilan also loves working on Vno',
           github: 'https://github.com/deadxears',
           linkedIn: 'https://www.linkedin.com/in/weilan-cui-81aa93b5/',
@@ -160,7 +160,7 @@ body {
 }
 
 #meetTeam {
-  font-size: 9vw;
+  font-size: 6vw;
 }
 
 .nav {

@@ -64,12 +64,19 @@ export default {
           gif:
             'https://cdn-images-1.medium.com/max/1600/1*-uhAIJMly9eTevEhgrulqw.gif',
         },
+{
+          element: 'build --ssr',
+          bullet: `To invoke the build method and dynamically create bundled js, css files, and a server.ts for server side rendering your application, type the following into the terminal:`,
+          code: 'vno build --ssr',
+          gif:
+            'https://i.ibb.co/bHC4CHK/Peek-2021-04-14-14-54.gif',
+        },
         {
           element: 'run dev',
-          bullet: `To faciliate development, we have provided access to a dummy server/re-build process that will bypass the need for manual rebuild every time a change has occured during development. You will simply need to call vno run dev to spin up the server with a connection to your root component. If you would like to utilize this functionality but have bypassed the create method, you will need to add an "options": {"port": 3000} to your vno.config.json file.`,
+          bullet: `To faciliate development, we have provided access to live reloading which bypasses the need for manual rebuild every time a change has occured during development. You will simply need to call vno run dev to spin up the server with a connection to your root component. If you would like to utilize this functionality but have bypassed the create method, you will need to add an "options": {"port": 3000} to your vno.config.json file.`,
           code: 'vno run dev',
           gif:
-            'https://cdn-images-1.medium.com/max/1600/1*5vQGLXvmlzJacQpqFEJV-Q.gif',
+            'https://i.ibb.co/6R2R5H5/live-Reload.gif',
         },
         {
           element: 'external dependencies',

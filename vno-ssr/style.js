@@ -124,8 +124,8 @@ a {
   background-color: transparent;
   margin: 16px;
   padding: 16px;
-  height: 300px;
-  width: 300px;
+  height: 187px;
+  width: 187px;
   perspective: 1000px;
 }
 
@@ -192,7 +192,7 @@ a {
 h2 {
   font-family: Chalet-NewYorkNineteenSixty, 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 .docs {
@@ -255,7 +255,7 @@ body {
 }
 
 #meetTeam {
-  font-size: 9vw;
+  font-size: 6vw;
 }
 
 .nav {
