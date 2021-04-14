@@ -287,7 +287,7 @@ const App = new Vue({
         {
           name: 'Weilan Cui',
           email: 'mailto:weilanc@gmail.com',
-          picture: 'https://i.ibb.co/47b6SZn/image-1.png',
+          picture: 'https://i.ibb.co/0JRx4gH/Screenshot-from-2021-04-14-18-30-50.png',
           about: 'Weilan also loves working on Vno',
           github: 'https://github.com/deadxears',
           linkedIn: 'https://www.linkedin.com/in/weilan-cui-81aa93b5/',
