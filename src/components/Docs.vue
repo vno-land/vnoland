@@ -15,26 +15,32 @@
     />
     <div class="moreinfo">
       <div class="lowgos">
-        <a href="https://github.com/oslabs-beta/vno" class="linkies"
-          ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
+        <a href="https://github.com/open-source-labs/vno" class="linkies"
+          ><img
+            id="gitLogo"
+            class="logo"
+            src="https://i.ibb.co/JzTPTMZ/git-logo.png"
         /></a>
         <a href="https://deno.land/x/vno" class="linkies"
-          ><img id="denoLogo" class="logo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
+          ><img
+            id="denoLogo"
+            class="logo"
+            src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
         /></a>
       </div>
     </div>
   </div>
 </template>
 <script>
-import DocNav from './DocNav';
-import DocItem from './DocItem';
+import DocNav from "./DocNav";
+import DocItem from "./DocItem";
 
 export default {
-  name: 'docs',
+  name: "docs",
   components: { DocItem, DocNav },
   data() {
     return {
-      top: '',
+      top: "",
       methods: {
         scrollMeTo(refName) {
           var element = this.$refs[refName];
@@ -45,51 +51,49 @@ export default {
       },
       information: [
         {
-          element: 'install',
+          element: "install",
           bullet: `In order to run vno locally from your machine, you'll need to name and install the executable.`,
           code:
-            'deno install --allow-net --unstable -f  https://deno.land/x/vno/install/vno.ts',
-          gif: 'https://media.giphy.com/media/LVokebNuReGJuwU13R/giphy.gif',
+            "deno install --allow-net --unstable -f  https://deno.land/x/vno/install/vno.ts",
+          gif: "https://media.giphy.com/media/LVokebNuReGJuwU13R/giphy.gif",
         },
         {
-          element: 'create',
+          element: "create",
           bullet: `You can now utilize vno create in your terminal to instantiate a new Vue/Deno project using vno.`,
-          code: 'vno create [new project]',
-          gif: 'https://i.ibb.co/Fw5Sp7n/vno-create.gif',
+          code: "vno create [new project]",
+          gif: "https://i.ibb.co/Fw5Sp7n/vno-create.gif",
         },
         {
-          element: 'build',
+          element: "build",
           bullet: `After successfully intalling and running create (cd into the project folder), you can use the vno build to initialize the parsing of your components. *this method can be utilized without using the create method described above so long as you provide a vno.config.json file containing {root: 'Name', entry: 'relative path to root'}.`,
-          code: 'vno build',
+          code: "vno build",
           gif:
-            'https://cdn-images-1.medium.com/max/1600/1*-uhAIJMly9eTevEhgrulqw.gif',
+            "https://cdn-images-1.medium.com/max/1600/1*-uhAIJMly9eTevEhgrulqw.gif",
         },
-{
-          element: 'build --ssr',
+        {
+          element: "build --ssr",
           bullet: `To invoke the build method and dynamically create bundled js, css files, and a server.ts for server side rendering your application, type the following into the terminal:`,
-          code: 'vno build --ssr',
-          gif:
-            'https://i.ibb.co/bHC4CHK/Peek-2021-04-14-14-54.gif',
+          code: "vno build --ssr",
+          gif: "https://i.ibb.co/bHC4CHK/Peek-2021-04-14-14-54.gif",
         },
         {
-          element: 'run dev',
+          element: "run dev",
           bullet: `To faciliate development, we have provided access to live reloading which bypasses the need for manual rebuild every time a change has occured during development. You will simply need to call vno run dev to spin up the server with a connection to your root component. If you would like to utilize this functionality but have bypassed the create method, you will need to add an "options": {"port": 3000} to your vno.config.json file.`,
-          code: 'vno run dev',
-          gif:
-            'https://i.ibb.co/6R2R5H5/live-Reload.gif',
+          code: "vno run dev",
+          gif: "https://i.ibb.co/6R2R5H5/live-Reload.gif",
         },
         {
-          element: 'external dependencies',
+          element: "external dependencies",
           bullet: `If you would prefer to not install vno locally to your machine, you can import the module from deno.land into your project.`,
           code: `import Factory from http://deno.land/x/vno/dist/mod.ts`,
         },
         {
-          element: 'Factory',
+          element: "Factory",
           bullet: `instantiate the Factory class`,
           code: `const vno = new Factory()`,
         },
         {
-          element: 'Build',
+          element: "Build",
           bullet: `run the build method on the Factory class`,
           code: `await vno.build()`,
         },

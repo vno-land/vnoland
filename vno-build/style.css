@@ -236,7 +236,7 @@ h1.pad {
   height: 3rem;
 }
 
-@import url('https://db.onlinewebfonts.com/c/6d253426005e3fdcd9f69455050bd7d7?family=Chalet-NewYorkNineteenSixty');
+@import url("https://db.onlinewebfonts.com/c/6d253426005e3fdcd9f69455050bd7d7?family=Chalet-NewYorkNineteenSixty");
 html {
   scroll-behavior: smooth;
 }
