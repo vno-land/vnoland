@@ -27,11 +27,17 @@
       </div>
       <div class="teamBottom">
         <div class="teamLowgos">
-          <a href="https://github.com/oslabs-beta/vno" class="linkies"
-            ><img id="gitLogo" class="logo" src="https://i.ibb.co/JzTPTMZ/git-logo.png"
+          <a href="https://github.com/open-source-labs/vno" class="linkies"
+            ><img
+              id="gitLogo"
+              class="logo"
+              src="https://i.ibb.co/JzTPTMZ/git-logo.png"
           /></a>
           <a href="https://deno.land/x/vno" class="linkies"
-            ><img id="denoLogo" class="logo" src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
+            ><img
+              id="denoLogo"
+              class="logo"
+              src="https://i.ibb.co/0ZP9MdP/deno-logo.png"
           /></a>
         </div>
       </div>
@@ -47,82 +53,84 @@
 </template>
 
 <script>
-import home from './components/Home';
-import team from './components/Team';
-import docs from './components/Docs';
+import home from "./components/Home";
+import team from "./components/Team";
+import docs from "./components/Docs";
 
 export default {
-  name: 'app',
+  name: "app",
   data() {
     return {
-      displayedComponent: 'Home',
+      displayedComponent: "Home",
       team: [
-        
         {
-          name: 'Mikey Gower',
-          email: 'mailto:gowermikey@gmail.com',
-          picture: 'https://i.ibb.co/W6z7VzK/Mikey.jpg',
-          about: 'Mikey loves wine. He also loves to party with said wine.',
-          github: 'https://github.com/mggower',
-          linkedIn: 'https://www.linkedin.com/in/mikeygower/',
+          name: "Mikey Gower",
+          email: "mailto:gowermikey@gmail.com",
+          picture: "https://i.ibb.co/W6z7VzK/Mikey.jpg",
+          about: "Mikey loves wine. He also loves to party with said wine.",
+          github: "https://github.com/mggower",
+          linkedIn: "https://www.linkedin.com/in/mikeygower/",
         },
         {
-          name: 'Jordan Grubb',
-          email: 'mailto:ImJordanGrubb@gmail.com',
-          picture: 'https://i.ibb.co/6mw8kZv/2.png',
-          about: 'Her drag name is Miss Diagnosed. She loves whiskey.',
-          github: 'https://github.com/jgrubb16',
-          linkedIn: 'https://www.linkedin.com/in/j-grubb',
+          name: "Jordan Grubb",
+          email: "mailto:ImJordanGrubb@gmail.com",
+          picture: "https://i.ibb.co/6mw8kZv/2.png",
+          about: "Her drag name is Miss Diagnosed. She loves whiskey.",
+          github: "https://github.com/jgrubb16",
+          linkedIn: "https://www.linkedin.com/in/j-grubb",
         },
         {
-          name: 'Kyle Jurassic',
-          email: 'mailto:kjuresich@gmail.com',
-          picture: 'https://i.ibb.co/yWBSVcD/Kyle.jpg',
-          about: 'He made our ReadMe, and he can read you for filth.',
-          github: 'http://github.com/kjurassic',
-          linkedIn: 'http://linkedin.com/in/kyle-juresich/',
+          name: "Kyle Jurassic",
+          email: "mailto:kjuresich@gmail.com",
+          picture: "https://i.ibb.co/yWBSVcD/Kyle.jpg",
+          about: "He made our ReadMe, and he can read you for filth.",
+          github: "http://github.com/kjurassic",
+          linkedIn: "http://linkedin.com/in/kyle-juresich/",
         },
         {
-          name: 'Andrew Rehrig',
-          email: 'mailto:arehrig@gmail.com',
-          picture: 'https://i.ibb.co/m6NRmm8/Andrew.jpg',
+          name: "Andrew Rehrig",
+          email: "mailto:arehrig@gmail.com",
+          picture: "https://i.ibb.co/m6NRmm8/Andrew.jpg",
           about:
             "She's beauty. She's grace. She loves a coding test. She can win any sewing challenge.",
-          github: 'https://github.com/andrew-rehrig',
-          linkedIn: 'https://www.linkedin.com/in/andrew-rehrig/',
+          github: "https://github.com/andrew-rehrig",
+          linkedIn: "https://www.linkedin.com/in/andrew-rehrig/",
         },
         {
-          name: 'Dwayne Richards',
-          email: 'mailto:dwaynerichards@gmail.com',
-          picture: 'https://i.ibb.co/2KXmCTw/Screenshot-from-2021-04-14-13-27-11.png',
-          about: 'Dwayne loves working on Vno',
-          github: 'https://github.com/dwaynerichards',
-          linkedIn: 'https://www.linkedin.com/in/dnkrichards/',
+          name: "Dwayne Richards",
+          email: "mailto:dwaynerichards@gmail.com",
+          picture:
+            "https://i.ibb.co/2KXmCTw/Screenshot-from-2021-04-14-13-27-11.png",
+          about: "Dwayne loves working on Vno",
+          github: "https://github.com/dwaynerichards",
+          linkedIn: "https://www.linkedin.com/in/dnkrichards/",
         },
         {
-          name: 'Brian Jungk',
-          email: 'mailto:brian.jungk@outlook.com',
-          picture: 'https://i.ibb.co/2SMYB6w/Screenshot-from-2021-04-14-13-26-18.png',
-          about: 'Brian also loves working on Vno',
-          github: 'https://github.com/HeroesOfOnesAndZeros',
-          linkedIn: 'https://www.linkedin.com/in/brian-jungk/',
+          name: "Brian Jungk",
+          email: "mailto:brian.jungk@outlook.com",
+          picture:
+            "https://i.ibb.co/2SMYB6w/Screenshot-from-2021-04-14-13-26-18.png",
+          about: "Brian also loves working on Vno",
+          github: "https://github.com/HeroesOfOnesAndZeros",
+          linkedIn: "https://www.linkedin.com/in/brian-jungk/",
         },
         {
-          name: 'Weilan Cui',
-          email: 'mailto:weilanc@gmail.com',
-          picture: 'https://i.ibb.co/0JRx4gH/Screenshot-from-2021-04-14-18-30-50.png',
-          about: 'Weilan also loves working on Vno',
-          github: 'https://github.com/deadxears',
-          linkedIn: 'https://www.linkedin.com/in/weilan-cui-81aa93b5/',
+          name: "Weilan Cui",
+          email: "mailto:weilanc@gmail.com",
+          picture:
+            "https://i.ibb.co/0JRx4gH/Screenshot-from-2021-04-14-18-30-50.png",
+          about: "Weilan also loves working on Vno",
+          github: "https://github.com/deadxears",
+          linkedIn: "https://www.linkedin.com/in/weilan-cui-81aa93b5/",
         },
         {
-          name: 'Robert Yang',
-          email: 'mailto:rob.yang@gmail.com',
-          picture: 'https://i.ibb.co/zSZHVkq/profile.jpg',
-          about: 'Robert also loves working on Vno',
-          github: 'https://github.com/unknownbreaker',
-          linkedIn: 'https://www.linkedin.com/in/robwyang/',
-        }
+          name: "Robert Yang",
+          email: "mailto:rob.yang@gmail.com",
+          picture: "https://i.ibb.co/zSZHVkq/profile.jpg",
+          about: "Robert also loves working on Vno",
+          github: "https://github.com/unknownbreaker",
+          linkedIn: "https://www.linkedin.com/in/robwyang/",
+        },
       ],
     };
   },
@@ -141,7 +149,7 @@ export default {
 </script>
 
 <style>
-@import url('https://db.onlinewebfonts.com/c/6d253426005e3fdcd9f69455050bd7d7?family=Chalet-NewYorkNineteenSixty');
+@import url("https://db.onlinewebfonts.com/c/6d253426005e3fdcd9f69455050bd7d7?family=Chalet-NewYorkNineteenSixty");
 html {
   scroll-behavior: smooth;
 }
