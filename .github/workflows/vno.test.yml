@@ -1,0 +1,25 @@
+name: Test Vno
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        deno-version: ['v1.10.2']
+
+    steps:
+      - name: Git Checkout Deno Mod
+        uses: actions/checkout@v2
+      - name: Use Deno Version ${{ matrix.deno-version }}
+        uses: denolib/setup-deno@v2.3.0
+        with:
+          deno-version: ${{ matrix.deno-version }}
+      - name: Spin up Server
+        run: deno run --reload --unstable --allow-read --allow-write --allow-env --allow-net oldServer.ts
