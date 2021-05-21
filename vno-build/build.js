@@ -3,10 +3,8 @@
 // deno-lint-ignore-file
 import Vue from "https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.esm.browser.js";
 
-
-     
 const DocItem = Vue.component("doc-item", {
-  template:  /* html */ `
+  template: /* html */ `
   <div :id="element">
     <li class="docItemContainer">
       <code v-if="code" class="codeblock"> {{ code }}</code>
@@ -17,20 +15,20 @@ const DocItem = Vue.component("doc-item", {
     </li>
   </div>
 `,
-  name: 'doc-item',
-  props: ['element', 'bullet', 'code', 'gif'],
+  name: "doc-item",
+  props: ["element", "bullet", "code", "gif"],
 });
 
 const DocNav = Vue.component("doc-nav", {
-  template:  /* html */ `
+  template: /* html */ `
   <a :href="link" class="docnav-element">{{ element }}</a>
 `,
-  name: 'doc-nav',
-  props: ['element', 'methods', 'link'],
+  name: "doc-nav",
+  props: ["element", "methods", "link"],
 });
 
 const Home = Vue.component("Home", {
-  template:  /* html */ `
+  template: /* html */ `
   <div class="home">
     <a href="https://github.com/open-source-labs/vno">
       <img id="vnoLogo" src="https://i.ibb.co/kDnqSNP/vnoLogo.png" />
@@ -55,7 +53,7 @@ const Home = Vue.component("Home", {
 });
 
 const Team = Vue.component("Team", {
-  template:  /* html */ `
+  template: /* html */ `
   <div class="flip-box">
     <div class="flip-box-inner">
       <div class="flip-box-front">
@@ -83,12 +81,12 @@ const Team = Vue.component("Team", {
     </div>
   </div>
 `,
-  props: ['name', 'email', 'github', 'linkedIn', 'about', 'picture'],
-  name: 'Team',
+  props: ["name", "email", "github", "linkedIn", "about", "picture"],
+  name: "Team",
 });
 
 const Docs = Vue.component("docs", {
-  template:  /* html */ `
+  template: /* html */ `
   <div id="docs">
     <nav id="doc-nav">
       <DocNav methods: methods v-for="item in information" :key="'key' +
@@ -137,39 +135,45 @@ const Docs = Vue.component("docs", {
       information: [
         {
           element: "install",
-          bullet: `In order to run vno locally from your machine, you'll need to name and install the executable.`,
+          bullet:
+            `In order to run vno locally from your machine, you'll need to name and install the executable.`,
           code:
             "deno install --allow-net --unstable -f  https://deno.land/x/vno/install/vno.ts",
           gif: "https://media.giphy.com/media/LVokebNuReGJuwU13R/giphy.gif",
         },
         {
           element: "create",
-          bullet: `You can now utilize vno create in your terminal to instantiate a new Vue/Deno project using vno.`,
+          bullet:
+            `You can now utilize vno create in your terminal to instantiate a new Vue/Deno project using vno.`,
           code: "vno create [new project]",
           gif: "https://i.ibb.co/Fw5Sp7n/vno-create.gif",
         },
         {
           element: "build",
-          bullet: `After successfully intalling and running create (cd into the project folder), you can use the vno build to initialize the parsing of your components. *this method can be utilized without using the create method described above so long as you provide a vno.config.json file containing {root: 'Name', entry: 'relative path to root'}.`,
+          bullet:
+            `After successfully intalling and running create (cd into the project folder), you can use the vno build to initialize the parsing of your components. *this method can be utilized without using the create method described above so long as you provide a vno.config.json file containing {root: 'Name', entry: 'relative path to root'}.`,
           code: "vno build",
           gif:
             "https://cdn-images-1.medium.com/max/1600/1*-uhAIJMly9eTevEhgrulqw.gif",
         },
         {
           element: "build --ssr",
-          bullet: `To invoke the build method and dynamically create bundled js, css files, and a server.ts for server side rendering your application, type the following into the terminal:`,
+          bullet:
+            `To invoke the build method and dynamically create bundled js, css files, and a server.ts for server side rendering your application, type the following into the terminal:`,
           code: "vno build --ssr",
           gif: "https://i.ibb.co/bHC4CHK/Peek-2021-04-14-14-54.gif",
         },
         {
           element: "run dev",
-          bullet: `To faciliate development, we have provided access to live reloading which bypasses the need for manual rebuild every time a change has occured during development. You will simply need to call vno run dev to spin up the server with a connection to your root component. If you would like to utilize this functionality but have bypassed the create method, you will need to add an "options": {"port": 3000} to your vno.config.json file.`,
+          bullet:
+            `To faciliate development, we have provided access to live reloading which bypasses the need for manual rebuild every time a change has occured during development. You will simply need to call vno run dev to spin up the server with a connection to your root component. If you would like to utilize this functionality but have bypassed the create method, you will need to add an "options": {"port": 3000} to your vno.config.json file.`,
           code: "vno run dev",
           gif: "https://i.ibb.co/6R2R5H5/live-Reload.gif",
         },
         {
           element: "external dependencies",
-          bullet: `If you would prefer to not install vno locally to your machine, you can import the module from deno.land into your project.`,
+          bullet:
+            `If you would prefer to not install vno locally to your machine, you can import the module from deno.land into your project.`,
           code: `import Factory from http://deno.land/x/vno/dist/mod.ts`,
         },
         {
@@ -188,7 +192,7 @@ const Docs = Vue.component("docs", {
 });
 
 const App = new Vue({
-  template:  /* html */ `
+  template: /* html */ `
   <div id="app">
     <header>
       <ul class="nav">
@@ -330,4 +334,4 @@ const App = new Vue({
   },
 });
 
-App.$mount("#app")
+App.$mount("#app");

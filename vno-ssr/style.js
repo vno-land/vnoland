@@ -327,5 +327,5 @@ body {
   bottom: 0;
   padding: 10px 0 6px;
 }
-</style>`
- export default styles
+</style>`;
+export default styles;
