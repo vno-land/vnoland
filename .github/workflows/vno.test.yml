@@ -1,10 +1,10 @@
-name: Test Vno
+name: Test Vno Frontend
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   test:
@@ -21,5 +21,3 @@ jobs:
         uses: denolib/setup-deno@v2.3.0
         with:
           deno-version: ${{ matrix.deno-version }}
-      - name: Spin up Server
-        run: deno run --reload --unstable --allow-read --allow-write --allow-env --allow-net oldServer.ts
